@@ -1,12 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './components/Navbar.jsx'
+import Video from './components/Video.jsx';
+import Homepage from './components/Homepage.jsx';
 
 function App() {
   return (
-    <div className="App">
-  
+    <div className="App flex">
 
+    {/* // <div className='flex'> */}
+      <Navbar/> 
+      {/* <Homepage/>    */}
+      <Video/>
 
     </div>
   );
