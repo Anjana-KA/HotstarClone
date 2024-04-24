@@ -1,5 +1,5 @@
-// import logo from './logo.svg';
 import './App.css';
+import './index.css'
 import Navbar from './components/Navbar.jsx'
 import Video from './components/Video.jsx';
 import Homepage from './components/Homepage.jsx';
@@ -12,7 +12,7 @@ function App() {
       <Navbar/> 
       {/* <Homepage/>    */}
       <Video/>
-
+      
     </div>
   );
 }
