@@ -13,7 +13,7 @@ const Navbar = () => {
     const [touch,setTouch] = useState(false)
 
     return (
-        <div className='grid grid-cols-2 bg-transparent h-screen w-28 absolute z-10'>
+       <div className='grid grid-cols-2 bg-transparent  h-screen w-28 absolute z-10 '>
             <div onMouseEnter={()=> setTouch(true)} onMouseLeave={()=> setTouch(false)}>
 
                 <img src={logo} className="w-16 ml-8 mt-6" />

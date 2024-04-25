@@ -13,7 +13,7 @@ Video {
   position: absolute;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5); 
-  filter: brightness(0.4); 
+  filter: brightness(0.6); 
   
 }
 
@@ -22,9 +22,8 @@ position: absolute;
 width: 100%;
 height: 100%;
 display: flex;
-font-size: 20px;
+font-size: 17px;
 flex-direction: column;
-justify-content: center;
 align-items: center;
 color: rgb(239, 232, 232);
 }
@@ -44,29 +43,41 @@ color: rgb(239, 232, 232);
 
 .p1 {
 
-  padding-left: 120px;
-  padding-right: 650px;
-  margin-top: 20px;
-
+  padding-right: 400px; 
+  margin-top: 15px;
+  color: rgb(226, 217, 217);
+  margin-right: 200px;
+  margin-bottom: 2px;
 }
 
+.p2 {
 
+  margin-right:860px; 
+  font-weight: bold;
+  position: relative;
+
+}
+.p3
+{
+font-weight: bold;
+margin-right: 740px;
+margin-top: 20px;
+
+
+}
 .wish{
  
-  margin-right: 1100px;
-  margin-top: 15px;
+  margin-right: 900px;
+  margin-top:160px;
 
 }
 .img1{
-  margin-right: 1100px;
+  margin-right: 900px;
 }
 
-.p1{
-  margin-right: 200px;
-} 
 
 .subscribe-btn {
-  padding: 11px 90px;
+  padding: 12px 90px;
   font-size: 19px;
   font-weight: bold;
   color:rgb(252, 246, 246);
@@ -76,8 +87,8 @@ color: rgb(239, 232, 232);
   cursor: pointer;
   transition: background-color 0.3s;
   font-family: sans-serif;
-  margin-right: 850px;
-  margin-top: 25px;
+  margin-right: 680px;
+  margin-top: 45px;
 
 }
 
@@ -87,16 +98,21 @@ color: rgb(239, 232, 232);
 
 
 .plus-btn {
-  padding: 10px 10px;
-  font-size: 30px;
-  color:rgb(252, 246, 246);
+  position: relative;
+  font-size: 19px;
+  font-weight: bold;
+  color:rgb(252, 255, 246);
   background-color: rgba(250, 247, 251, 0.2);
-  border: none;
   border-radius: 9px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-family: sans-serif;
-  margin-right: 350px;
-  margin-top: 25px;
+  padding: 12px 12px;
+  bottom: 52px;
+  right: 100px;
+   
 
 }
+
+
+
