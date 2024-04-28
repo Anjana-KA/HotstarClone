@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 
-export default function App() {
+export default function Movies() {
   const [imageUrls, setImageUrls] = useState([]);
 
   useEffect(() => {
@@ -19,15 +19,18 @@ export default function App() {
     fetchData();
   }, []);
 
-  return (
-    <div className="image-card-scroll-container">
-      <div className="image-card-container">
-        {imageUrls.map((imageUrl, index) => (
-          <div className="image-card" key={index}>
-            <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
-          </div>
-        ))}
-      </div>
+
+return (
+  <div className="image-card-scroll-container">
+    <div className="image-card-container">
+      {imageUrls.slice(0, 8).map((imageUrl, index) => ( 
+        <div className="image-card" key={index}>
+          <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
+        </div>
+      ))}
     </div>
-  );
+    
+  </div>
+ 
+);
 }
