@@ -30,7 +30,7 @@ const Navbar = () => {
 <br></br>
             </div>
 
-            {touch && <div className=" z-20 ml-8 w-20  h-screen font-bold text-base text-slate-300  hover:scale-150">
+            {touch && <div className=" z-20 ml-8 w-20  h-screen font-bold text-base text-slate-300 hover:scale-125">
                 <h4 className="mt-40">My Space</h4>
                 <h4 className="mt-9">Search</h4>
                 <h4 className="mt-9">Home</h4>
