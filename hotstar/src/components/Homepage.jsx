@@ -1,25 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import videoBg from '../video/videoBg.mp4';
 import wish from '../Images/wish.webp';
 import img1 from '../Images/img1.webp';
 import Movies from './Movies';
 
 const Homepage = () => {
-  const [imageUrls, setImageUrls] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const resp = await fetch('https://api.sampleapis.com/movies/family');
-        const data = await resp.json();
-        const urls = data.map(movie => movie.posterURL);
-        setImageUrls(urls);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
     <div className="video-container">

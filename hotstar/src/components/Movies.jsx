@@ -19,11 +19,11 @@ export default function Movies() {
     fetchData();
   }, []);
 
-
 return (
   <div className="image-card-scroll-container">
+    <h1><div className="heading">Latest Releases</div></h1>
     <div className="image-card-container">
-      {imageUrls.slice(0, 8).map((imageUrl, index) => ( 
+      {imageUrls.slice(0, 7).map((imageUrl, index) => ( 
         <div className="image-card" key={index}>
           <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
         </div>

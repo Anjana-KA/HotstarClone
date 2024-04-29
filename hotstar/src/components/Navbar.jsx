@@ -13,23 +13,24 @@ const Navbar = () => {
     const [touch,setTouch] = useState(false)
 
     return (
-       <div className='grid grid-cols-2 bg-transparent  h-screen w-28 absolute z-10 '>
+       <div className='grid grid-cols-2 bg-transparent  h-screen w-28 absolute z-10 navbar'>
             <div onMouseEnter={()=> setTouch(true)} onMouseLeave={()=> setTouch(false)}>
 
                 <img src={logo} className="w-16 ml-8 mt-6" />
                 <a href="#" class="subscribe-button">Subscribe&nbsp;<span>&gt;&nbsp;</span> </a> <br></br>
                <br></br>
-                <img src={myspace} className="w-7 ml-9 mt-8 cursor-pointer" />
-                <img src={search} className="w-7 ml-9 mt-8 cursor-pointer" />
-                <img src={home} className="w-7 ml-9 mt-8 cursor-pointer" /> 
-                <img src={tv} className="w-7 ml-9 mt-8 cursor-pointer" />
-                <img src={movies} className="w-7 ml-9 mt-8 cursor-pointer" />
-                <img src={sports} className="w-7 ml-9 mt-8 cursor-pointer" />
-                <img src={category} className="w-7 ml-9 mt-8 cursor-pointer" />
+               
+                <img src={myspace} className="w-7 ml-9 mt-8 cursor-pointer  hover:scale-125" />
+                <img src={search} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125" />
+                <img src={home} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 " /> 
+                <img src={tv} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125" />
+                <img src={movies} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125" />
+                <img src={sports} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125" />
+                <img src={category} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125" />
 <br></br>
             </div>
 
-            {touch && <div className="z-20 ml-8 w-20  h-screen font-bold text-base text-slate-300">
+            {touch && <div className=" z-20 ml-8 w-20  h-screen font-bold text-base text-slate-300  hover:scale-150">
                 <h4 className="mt-40">My Space</h4>
                 <h4 className="mt-9">Search</h4>
                 <h4 className="mt-9">Home</h4>
@@ -39,9 +40,7 @@ const Navbar = () => {
                 <h6 className="mt-9">Categories</h6>
 
             </div> }
-
         </div>
-
     )
 }
 

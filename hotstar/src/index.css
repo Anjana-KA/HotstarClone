@@ -13,7 +13,7 @@ Video {
   position: absolute;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5); 
-  /* filter: brightness(0.6);  */
+  filter: brightness(0.5); 
   
 }
 
@@ -44,16 +44,16 @@ color: rgb(239, 232, 232);
 
 .p1 {
 
-  padding-right: 400px; 
+  padding-right: 450px; 
   margin-top: 15px;
   color: rgb(226, 217, 217);
-  margin-right: 388px;
+  margin-right: 192px;
   margin-bottom: 2px;
 }
 
 .p2 {
 
-  margin-right:1035px; 
+  margin-right:900px; 
   font-weight: bold;
   position: relative;
 
@@ -62,18 +62,18 @@ color: rgb(239, 232, 232);
 .p3
 {
 font-weight: bold;
-margin-right: 915px;
+margin-right: 784px;
 margin-top: 20px;
 }
 
 .wish{
  
-  margin-right: 1100px;
-  margin-top:160px;
+  margin-right: 950px;
+  margin-top:180px;
 
 }
 .img1{
-  margin-right: 1100px;
+  margin-right: 950px;
 }
 
 
@@ -88,7 +88,7 @@ margin-top: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-family: sans-serif;
-  margin-right: 840px;
+  margin-right: 710px;
   margin-top: 45px;
 
 }
@@ -109,7 +109,7 @@ margin-top: 20px;
   font-family: sans-serif;
   padding: 12px 12px;
   bottom: 52px;
-  right: 190px;
+  right: 120px;
   
 }
 
@@ -124,7 +124,7 @@ margin-top: 20px;
   font-family: sans-serif;
   padding: 1px 1px;
   bottom: 286px;
-  right: 400px;
+  right: 340px;
   width: 25px;
   height: 25px;
 
@@ -156,6 +156,9 @@ margin-top: 20px;
   overflow: hidden;
   right: 400px;
 }  
+.image-card:hover {
+  transform: scale(1.09); 
+}
 
 
 .image {
@@ -163,17 +166,32 @@ margin-top: 20px;
   height: auto;
 }
 
-
  .content-container {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  max-width: 100%; /* Add max-width to prevent content from extending beyond viewport */
+  max-width: 100%; 
   height: 770px;
   padding: 20px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.5); 
+  /* background-color: rgba(133, 128, 128, 0.5);  */
   overflow-y: auto; 
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-x: hidden; 
+} 
+
+.heading {
+font-size: large;  
+position: relative;
+font-weight: bold;
+font-family: sans-serif;
+right: 100%;
+width: 200px;
+height: 40px;
+left: 60px;
+}
+
+
+.navbar {
+  transition: transform 0.3s ease;
 }
