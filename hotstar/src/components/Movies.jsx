@@ -1,9 +1,8 @@
 import React from "react";
 import { useEffect, useState } from 'react';
-
 export default function Movies() {
-  const [imageUrls, setImageUrls] = useState([]);
 
+  const [imageUrls, setImageUrls] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -23,13 +22,15 @@ return (
   <div className="image-card-scroll-container">
     <h1><div className="heading">Latest Releases</div></h1>
     <div className="image-card-container">
-      {imageUrls.slice(0, 7).map((imageUrl, index) => ( 
+    
+      {imageUrls.slice(0, 20).map((imageUrl, index) => (     
         <div className="image-card" key={index}>
           <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
         </div>
+       
       ))}
-    </div>
-    
+      
+    </div>   
   </div>
  
 );

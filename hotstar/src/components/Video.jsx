@@ -18,7 +18,6 @@ return (
         <button class="subscribe-btn"> <span class="play-icon">&#9654;</span>  &nbsp;Subscribe to Watch </button>
         <button class="plus-btn"> <span class="">&nbsp; +</span>  &nbsp; </button>
       
-
     </div>
 
     </div>

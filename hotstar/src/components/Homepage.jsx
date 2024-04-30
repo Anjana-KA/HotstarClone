@@ -17,7 +17,7 @@ const Homepage = () => {
           <p className='p1'>Asha, a sharp-witted idealist, makes a powerful wish that's <br></br>answered by Star, a ball of boundless energy. </p>
           <p className='p3'>Musical | Comedy | Action | Adventure</p>
           <button className="subscribe-btn"> <span className="play-icon">&#9654;</span>  &nbsp;Subscribe to Watch </button>
-          <button className="plus-btn"> <span className="">&nbsp; &#43;</span>  &nbsp; </button>
+          <button className="plus-btn"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
           <button className="plus-btn1">U</button> 
         <Movies />
 
