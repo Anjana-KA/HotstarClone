@@ -38,7 +38,7 @@ const Navbar = () => {
                 <h4 className="mt-9">Movies</h4>
                 <h4 className="mt-9">Sports</h4>
                 <h6 className="mt-9">Categories</h6>
-
+                
             </div> }
         </div>
     )
