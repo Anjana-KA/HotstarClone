@@ -147,27 +147,29 @@ margin-top: 20px;
   display: flex;
   justify-content: center;
   padding-bottom: 2px;
-  margin-left: 80px;
+  margin-left: 90px;
   top: 20px;
 }
 
 .image-card {
   margin-right: 6px;
   width: 155px;
-  /* height: 180px; */
   border: 1px solid #5c5454;
   border-radius: 5px;
   overflow: hidden;
   right: 400px;
 }  
 .image-card:hover {
-  transform: scale(1.40); 
+  transform: scale(1.50); 
+  .image{
+    height: 64%;
+  }
 }
 
 
 .image {
   width: 100%;
-  height: auto;
+  height:100%;
 }
 
  .content-container {
@@ -179,8 +181,6 @@ margin-top: 20px;
   height: 770px;
   padding: 20px;
   box-sizing: border-box;
-  /* background-color: rgba(133, 128, 128, 0.5);  */
-  /* overflow-y: auto;  */
   overflow-x: hidden; 
   
 } 
@@ -194,7 +194,7 @@ right: 100%;
 width: 200px;
 height: 70px;
 left: 80px;
-bottom:15px;
+bottom:18px;
 }
 
 
@@ -210,7 +210,96 @@ bottom:15px;
 } 
 
 
-/* .navbar:hover {
-  opacity: 0.2;
-} */
+/* Horror Movies */
+.image-card-scroll-container1 {
+  position: absolute;
+  bottom: 500px;
+  top: 670px;
+  left: 0;
+  width: 100%;
+  overflow-x: 400px;
+
+}  
+
+.image-card-container1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+  margin-left: 80px;
+  top: 360px;
+}
+
+.image-card1{
+  margin-right: 6px;
+  width: 155px;
+  border: 1px solid #5c5454;
+  border-radius: 5px;
+  overflow: hidden;
+  right: 400px;
+}  
+.image-card1:hover {
+  transform: scale(1.40); 
+}
+
+.heading1 {
+  font-size: larger;  
+  position: relative;
+  font-weight: bold;
+  font-family: sans-serif;
+  right: 100%;
+  width: 200px;
+  height: 70px;
+  left: 80px;
+  top: 320px;
+  }
+  
+  /* Mystery Movies */
+.image-card-scroll-container2 {
+  position: absolute;
+  bottom: 500px;
+  top: 670px;
+  left: 0;
+  width: 100%;
+  overflow-x: 400px;
+
+}  
+
+.image-card-container2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+  margin-left: 80px;
+  top: 690px;
+}
+
+.image-card2{
+  margin-right: 6px;
+  width: 155px;
+  border: 1px solid #5c5454;
+  border-radius: 5px;
+  overflow: hidden;
+  right: 400px;
+}  
+.image-card2:hover {
+  transform: scale(1.40); 
+}
+
+.heading2 {
+  font-size: larger;  
+  position: relative;
+  font-weight: bold;
+  font-family: sans-serif;
+  right: 100%;
+  width: 200px;
+  height: 70px;
+  left: 80px;
+  top: 650px;
+  }
+
+
+ 
+
+
 

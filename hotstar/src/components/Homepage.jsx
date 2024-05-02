@@ -3,10 +3,13 @@ import videoBg from '../video/videoBg.mp4';
 import wish from '../Images/wish.webp';
 import img1 from '../Images/img1.webp';
 import Movies from './Movies';
+import HorrorMovies from './HorrorMovies';
+import MysteryMovies from './MysteryMovies';
 
 const Homepage = () => {
 
   return (
+  
     <div className="video-container">
       <video src={videoBg} autoPlay loop muted className="video-bg"></video>
       <div className="content-container">
@@ -19,11 +22,15 @@ const Homepage = () => {
           <button className="subscribe-btn"> <span className="play-icon">&#9654;</span>  &nbsp;Subscribe to Watch </button>
           <button className="plus-btn"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
           <button className="plus-btn1">U</button> 
-        <Movies />
+          <HorrorMovies/> 
+          <Movies />
+          <MysteryMovies/>
+        
 
         </div> 
         </div>
       </div>
+     
   );
 }
 
