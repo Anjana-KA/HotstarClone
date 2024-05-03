@@ -7,28 +7,45 @@
   .movie-content {
     display: none;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    /* font-size: smaller; */
+    bottom: 3px;
     width: 100%;
     background-color: rgb(5, 5, 5);
     color: white;
-    padding: -6px;
+    padding: -8px;
     border-radius: 3px 0 5px 5px;
+
   }
   
   
   .watch-now-button {
-    background-color: white;
-    color: black;
-    padding: 1px 1px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
    
+    padding: 5px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color:rgb(10, 10, 10);
+    background-color: rgb(254, 251, 255);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 12px;
+
   }
 
+  .plusb{
 
-  
+  position: relative;
+  font-size: 19px;
+  color:rgb(252, 255, 246);
+  background-color: rgba(250, 247, 251, 0.2);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: sans-serif;
+  padding: 1px 1px;
+  margin-left: 5px;
+  top:2px;
 
-
+}

@@ -1,52 +1,3 @@
-// import React from "react";
-// import { useEffect, useState } from 'react';
-
-// export default function Movies() {
-
-//   const [imageUrls, setImageUrls] = useState([]);
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const resp = await fetch('https://api.sampleapis.com/movies/family');
-//         const data = await resp.json();
-//         const urls = data.map(movie => movie.posterURL);
-//         setImageUrls(urls);
-//       } catch (error) {
-//         console.error('Error fetching data:', error);
-//       }
-//     };
-
-//     fetchData();
-//   }, []);
-
-// return (
-//   <div className="image-card-scroll-container">
-//     <h1><div className="heading">Latest Releases</div></h1>
-//     <div className="image-card-container">
-    
-//       {imageUrls.slice(0, 20).map((imageUrl, index) => (     
-//         <div className="image-card" key={index}>
-//           <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
-//         </div>
-       
-//       ))}
-      
-//     </div>   
-//   </div>
- 
-// );
-// }
-
-
-
-
-
-
-
-
-
-
-
 
 import React, { useEffect, useState } from 'react';
 import './Movies.css'; // Import the CSS file
@@ -99,9 +50,12 @@ const Movies = () => {
             {/* Content to display on hover */}
             <div className="movie-content">
               {/* Add your content here */}
+           
+              <button className="watch-now-button">Watch Now</button>
+              <button className="plusb"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
+
               <h3>Movie Title</h3>
               <p>Description</p>
-              <button className="watch-now-button">Watch Now</button>
             </div>
           </div>
         ))}
@@ -114,3 +68,55 @@ const Movies = () => {
 }
 
 export default Movies;
+
+
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import { useEffect, useState } from 'react';
+
+// export default function Movies() {
+
+//   const [imageUrls, setImageUrls] = useState([]);
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const resp = await fetch('https://api.sampleapis.com/movies/family');
+//         const data = await resp.json();
+//         const urls = data.map(movie => movie.posterURL);
+//         setImageUrls(urls);
+//       } catch (error) {
+//         console.error('Error fetching data:', error);
+//       }
+//     };
+
+//     fetchData();
+//   }, []);
+
+// return (
+//   <div className="image-card-scroll-container">
+//     <h1><div className="heading">Latest Releases</div></h1>
+//     <div className="image-card-container">
+    
+//       {imageUrls.slice(0, 20).map((imageUrl, index) => (     
+//         <div className="image-card" key={index}>
+//           <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
+//         </div>
+       
+//       ))}
+      
+//     </div>   
+//   </div>
+ 
+// );
+// }
+
+
+

@@ -13,7 +13,7 @@ Video {
   position: absolute;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5); 
-  filter: brightness(0.6); 
+  filter: brightness(0.7); 
   
 }
 
@@ -161,6 +161,8 @@ margin-top: 20px;
 }  
 .image-card:hover {
   transform: scale(1.50); 
+  transition: transform 0.4s ease;
+
   .image{
     height: 64%;
   }
@@ -300,6 +302,13 @@ bottom:18px;
 
 
  
+
+
+
+
+
+
+
 
 
 
