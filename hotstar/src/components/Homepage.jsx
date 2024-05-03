@@ -26,7 +26,6 @@ const Homepage = () => {
           <Movies />
           <MysteryMovies/>
         
-
         </div> 
         </div>
       </div>
