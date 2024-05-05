@@ -1,0 +1,121 @@
+
+.image-card-scroll-container {
+  position: absolute;
+  bottom: 500px;
+  top: 670px;
+  left: 0;
+  width: 100%;
+  overflow-x: 400px;
+
+}  
+
+
+.image-card-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+  margin-left: 90px;
+  top: 20px;
+}
+
+.image-card {
+  margin-right: 6px;
+  width: 155px;
+  border: 1px solid #5c5454;
+  border-radius: 5px;
+  overflow: hidden;
+  right: 400px;
+}  
+.image-card:hover {
+  transform: scale(1.50); 
+  transition: transform 0.4s ease;
+
+  .image{
+    height: 64%;
+  }
+}
+
+
+.image {
+  width: 100%;
+  height:100%;
+}
+
+ .content-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%; 
+  height: 770px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+  
+} 
+
+.heading {
+font-size: larger;  
+position: relative;
+font-weight: bold;
+font-family: sans-serif;
+right: 100%;
+width: 200px;
+height: 70px;
+left: 80px;
+bottom:18px;
+}
+
+/* Hovering Contents */
+
+  .image-card:hover .movie-content {
+    display: block; 
+  
+  }
+
+  .movie-content {
+    display: none;
+    position: absolute;
+    /* font-size: smaller; */
+    bottom: 3px;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    padding: -8px;
+    border-radius: 3px 0 5px 5px;
+
+  }
+  
+  
+  .watch-now-button {
+   
+    padding: 5px 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color:rgb(10, 10, 10);
+    background-color: rgb(254, 251, 255);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-left: 12px;
+
+  }
+
+  .plusb{
+
+  position: relative;
+  font-size: 19px;
+  color:rgb(252, 255, 246);
+  background-color: rgba(250, 247, 251, 0.2);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: sans-serif;
+  padding: 1px 1px;
+  margin-left: 5px;
+  top:2px;
+
+}

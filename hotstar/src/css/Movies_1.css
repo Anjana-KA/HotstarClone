@@ -1,0 +1,50 @@
+
+/* Horror Movies */
+.image-card-scroll-container1 {
+    position: absolute;
+    bottom: 500px;
+    top: 670px;
+    left: 0;
+    width: 100%;
+    overflow-x: 400px;
+  
+  }  
+  
+  .image-card-container1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2px;
+    margin-left: 80px;
+    top: 360px;
+  }
+  
+  .image-card1{
+    margin-right: 6px;
+    width: 155px;
+    border: 1px solid #5c5454;
+    border-radius: 5px;
+    overflow: hidden;
+    right: 400px;
+  }  
+  .image-card1:hover {
+    transform: scale(1.40); 
+    }
+    
+  
+  .heading1 {
+    font-size: larger;  
+    position: relative;
+    font-weight: bold;
+    font-family: sans-serif;
+    right: 100%;
+    width: 200px;
+    height: 70px;
+    left: 80px;
+    top: 320px;
+    }
+
+
+
+
+

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import logo from "../Images/logo.svg"
-import myspace from "../Images/myspace.svg"
-import search from "../Images/search.svg"
-import home from "../Images/home.svg"
-import tv from "../Images/tv.svg"
-import movies from "../Images/movies.svg"
-import sports from "../Images/sports.svg"
-import category from "../Images/category.svg"
+import logo from "../images/logo.svg"
+import myspace from "../images/myspace.svg"
+import search from "../images/search.svg"
+import home from "../images/home.svg"
+import tv from "../images/tv.svg"
+import movies from "../images/movies.svg"
+import sports from "../images/sports.svg"
+import category from "../images/category.svg"
 
 
 const Navbar = () => {

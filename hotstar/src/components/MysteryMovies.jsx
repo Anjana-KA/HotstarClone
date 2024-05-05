@@ -1,16 +1,17 @@
 import React from "react";
 import { useEffect, useState } from 'react';
+import '../css/Movies_2.css'; // Import the CSS file
 
-
-export default function MysteryMovies() {
-
+const MysteryMovies = () => {
   const [imageUrls, setImageUrls] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const resp = await fetch('https://api.sampleapis.com/movies/mystery');
         const data = await resp.json();
-        const urls = data.map(movie => movie.posterURL);
+        const urls = data.map((movie) => movie.posterURL);
         setImageUrls(urls);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -20,89 +21,55 @@ export default function MysteryMovies() {
     fetchData();
   }, []);
 
+  const slideLeft = () => {
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - 3, 0));
+  };
 
+  const slideRight = () => {
+    setCurrentIndex((prevIndex) =>
+      Math.min(prevIndex + 3, imageUrls.length - 3)
+    );
+  };
 
-return (
-  <div className="image-card-scroll-container2">
-    <h1><div className="heading2">Mystery Movies</div></h1>
+  return (
+    <div className="image-card-scroll-container2">
+      <h1>
+        <div className="heading2">Mystery Movies</div>
+      </h1>
+      <div className="image-card-container2">
+        <button className="button-left" onClick={slideLeft} disabled={currentIndex === 0}>
+          &lt;
+        </button>
+        {imageUrls.slice(currentIndex, currentIndex + 7).map((imageUrl, index) => (
+          <div className="image-card2" key={index}>
+            <img
+              src={imageUrl}
+              alt={`Image ${currentIndex + index + 4}`}
+              className="image"
+            />
+            {/* Content to display on hover */}
+            <div className="movie-content">
+              {/* Add your content here */}
+           
+              <button className="watch-now-button">Watch Now</button>
+              <button className="plusb"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
 
-    <div className="image-card-container2">
-    
-      {imageUrls.slice(0, 27).map((imageUrl, index) => (     
-        <div className="image-card2" key={index}>
-          <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
-        </div>
-       
-      ))}
-
-      
-    </div>   
-  </div>
- 
-);
+              <h3>Movie Title</h3>
+              <p>Description</p>
+            </div>
+          </div>
+        ))}
+        <button className="button-right" onClick={slideRight} disabled={currentIndex === imageUrls.length - 1}>
+          &gt;
+        </button>
+      </div>
+    </div>
+  );
 }
 
+export default MysteryMovies;
 
 
 
 
 
-
-
-
-
-
-// import React, { useEffect, useState } from 'react';
-// import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-
-// export default function MysteryMovies() {
-//   const [imageUrls, setImageUrls] = useState([]);
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       try {
-//         const resp = await fetch('https://api.sampleapis.com/movies/mystery');
-//         const data = await resp.json();
-//         const urls = data.map(movie => movie.posterURL);
-//         setImageUrls(urls);
-//       } catch (error) {
-//         console.error('Error fetching data:', error);
-//       }
-//     };
-
-//     fetchData();
-//   }, []);
-
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     pauseOnHover: true,
-//     responsive: [
-     
-//     ]
-//   };
-
-//   return (
-//     <div className="image-card-scroll-container2">
-     
-  
-//       <h1>
-//         <div className="heading2">Mystery Movies</div>
-//       </h1>
-//       <Slider {...settings}>
-//         {imageUrls.map((imageUrl, index) => (
-//           <div className="image-card2" key={index}>
-//             <img src={imageUrl} alt={`Image ${index + 1}`} className="image" />
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// }

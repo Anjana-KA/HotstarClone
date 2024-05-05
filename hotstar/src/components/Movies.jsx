@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import './Movies.css'; // Import the CSS file
+import '../css/Movies.css'; // Import the CSS file
 
 const Movies = () => {
   const [imageUrls, setImageUrls] = useState([]);
