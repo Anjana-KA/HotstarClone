@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from 'react';
 import '../css/Movies_1.css'; // Import the CSS file
 
@@ -9,7 +8,7 @@ const HorrorMovies = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch('https://api.sampleapis.com/movies/horror');
+        const resp = await fetch('https://api.sampleapis.com/movies/western');
         const data = await resp.json();
         const urls = data.map((movie) => movie.posterURL);
         setImageUrls(urls);
