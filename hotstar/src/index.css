@@ -29,6 +29,20 @@ color: rgb(239, 232, 232);
 
 }
 
+.content-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%; 
+  height: 770px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden; 
+  
+} 
+
+
 .subscribe-button {
   color: rgb(221, 175, 24);
   padding: 0;

@@ -44,8 +44,77 @@
     }
   
   
-   
-  
+
+/* Hovering Contents */
+
+.image-card2:hover .movie-content {
+  display: block; 
+
+}
+
+.movie-content {
+  display: none;
+  position: absolute;
+  /* font-size: smaller; */
+  bottom: 3px;
+  width: 100%;
+  background-color: rgb(5, 5, 5);
+  color: white;
+  padding: -8px;
+  border-radius: 3px 0 5px 5px;
+
+}
+
+
+.watch-now-button {
+ 
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color:rgb(10, 10, 10);
+  background-color: rgb(218, 211, 220);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer; 
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-left: 7px;
+
+}
+
+.plusb{
+
+position: relative;
+font-size: 19px;
+color:rgb(252, 255, 246);
+background-color: rgba(250, 247, 251, 0.2);
+border-radius: 9px;
+cursor: pointer;
+transition: background-color 0.3s;
+font-family: sans-serif;
+padding: 0px 0px;
+margin-left: 5px;
+top:2px;
+
+}
+
+
+.p{
+
+font-size: 10px;
+margin-left: 25px;
+margin-top: 12px;
+
+}
+.ph{
+font-size: 10px;
+margin-left: 8px;
+margin-right: 8px;
+margin-top: 8px;
+text-align: justify;
+color: #c0bcbc;
+
+}
   
   
   

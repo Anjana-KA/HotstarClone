@@ -8,7 +8,7 @@ const MysteryMovies = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch('https://api.sampleapis.com/movies/mystery');
+        const resp = await fetch('https://api.sampleapis.com/movies/horror');
         const data = await resp.json();
         const urls = data.map((movie) => movie.posterURL);
         setImageUrls(urls);

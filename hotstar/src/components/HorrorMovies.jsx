@@ -8,7 +8,7 @@ const HorrorMovies = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch('https://api.sampleapis.com/movies/western');
+        const resp = await fetch('https://api.sampleapis.com/movies/mystery');
         const data = await resp.json();
         const urls = data.map((movie) => movie.posterURL);
         setImageUrls(urls);
@@ -47,11 +47,11 @@ const HorrorMovies = () => {
               className="image"
             />
             {/* Content to display on hover */}
-            <div className="movie-content">
+            <div className="movie-content1">
               {/* Add your content here */}
            
-              <button className="watch-now-button">Watch Now</button>
-              <button className="plusb"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
+              <button className="watch-now-button1">Watch Now</button>
+              <button className="plusb1"> <span className="plus1">&nbsp; +</span>  &nbsp; </button>
 
               <h3>Movie Title</h3>
               <p>Description</p>
