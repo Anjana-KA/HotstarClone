@@ -5,11 +5,11 @@ import img1 from '../images/img1.webp';
 import Movies from './Movies';
 import HorrorMovies from './HorrorMovies';
 import MysteryMovies from './MysteryMovies';
+import SmallSlider from './MoviesSlide';
 
 const Homepage = () => {
 
   return (
-  
     <div className="video-container">
       <video src={videoBg} autoPlay loop muted className="video-bg"></video>
       <div className="content-container">
@@ -25,7 +25,7 @@ const Homepage = () => {
           <HorrorMovies/> 
           <Movies />
           <MysteryMovies/>
-        
+          {/* <SmallSlider />    */}
         </div> 
         </div>
       </div>
