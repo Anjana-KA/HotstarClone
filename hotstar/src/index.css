@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 Video {
   object-fit: cover;
   width: 100%;
@@ -41,7 +40,6 @@ color: rgb(239, 232, 232);
   overflow-x: hidden; 
   
 } 
-
 
 .subscribe-button {
   color: rgb(221, 175, 24);
@@ -108,6 +106,8 @@ margin-top: 20px;
 }
 
 .subscribe-btn:hover {
+  transform: scale(1.02); 
+  transition: transform 0.4s ease;
   background-color: rgba(251, 250, 248, 0.314);
 }
 
@@ -125,6 +125,10 @@ margin-top: 20px;
   bottom: 52px;
   right: 142px;
   
+}
+.plus-btn:hover{
+  transform: scale(1.04); 
+  transition: transform 0.4s ease;
 }
 
 .plus-btn1 {

@@ -50,11 +50,10 @@ const HorrorMovies = () => {
             <div className="movie-content1">
               {/* Add your content here */}
            
-              <button className="watch-now-button1">Watch Now</button>
+              <button className="watch-now-button1"><span className="play-icon">&#9654;  </span>Watch Now</button>
               <button className="plusb1"> <span className="plus1">&nbsp; +</span>  &nbsp; </button>
-
-              <h3>Movie Title</h3>
-              <p>Description</p>
+              <p className='pp1'>2023 . 1h 34m . English </p>
+              <p className='ph1'>Wish, Animated movies have brought joy and wonder to audiences around the world of cartoons</p>
             </div>
           </div>
         ))}

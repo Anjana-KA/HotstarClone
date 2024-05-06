@@ -28,7 +28,8 @@
     right: 400px;
   }  
   .image-card1:hover {
-    transform: scale(1.40); 
+    transform: scale(1.60); 
+    transition: transform 0.4s ease;
     }
     
   
@@ -67,7 +68,7 @@
 }
 
 
-.watch-now-button {
+.watch-now-button1 {
  
   padding: 4px 10px;
   font-size: 13px;
@@ -83,7 +84,7 @@
 
 }
 
-.plusb{
+.plusb1{
 
 position: relative;
 font-size: 19px;
@@ -100,14 +101,14 @@ top:2px;
 }
 
 
-.p{
+.pp1{
 
 font-size: 10px;
 margin-left: 25px;
 margin-top: 12px;
 
 }
-.ph{
+.ph1{
 font-size: 10px;
 margin-left: 8px;
 margin-right: 8px;

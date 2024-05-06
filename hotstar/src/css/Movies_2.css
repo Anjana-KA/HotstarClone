@@ -29,6 +29,7 @@
   }  
   .image-card2:hover {
     transform: scale(1.40); 
+    transition: transform 0.4s ease;
   }
   
   .heading2 {
@@ -47,12 +48,12 @@
 
 /* Hovering Contents */
 
-.image-card2:hover .movie-content {
+.image-card2:hover .movie-content2 {
   display: block; 
 
 }
 
-.movie-content {
+.movie-content2 {
   display: none;
   position: absolute;
   /* font-size: smaller; */
@@ -66,7 +67,7 @@
 }
 
 
-.watch-now-button {
+.watch-now-button2 {
  
   padding: 4px 10px;
   font-size: 13px;
@@ -99,14 +100,14 @@ top:2px;
 }
 
 
-.p{
+.pp2{
 
 font-size: 10px;
 margin-left: 25px;
 margin-top: 12px;
 
 }
-.ph{
+.ph2{
 font-size: 10px;
 margin-left: 8px;
 margin-right: 8px;

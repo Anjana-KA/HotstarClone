@@ -8,7 +8,7 @@ const MysteryMovies = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch('https://api.sampleapis.com/movies/horror');
+        const resp = await fetch('https://api.sampleapis.com/movies/classic');
         const data = await resp.json();
         const urls = data.map((movie) => movie.posterURL);
         setImageUrls(urls);
@@ -47,14 +47,14 @@ const MysteryMovies = () => {
               className="image"
             />
             {/* Content to display on hover */}
-            <div className="movie-content">
+            <div className="movie-content2">
               {/* Add your content here */}
            
-              <button className="watch-now-button">Watch Now</button>
+              <button className="watch-now-button2"><span className="play-icon">&#9654;  </span>Watch Now</button>
               <button className="plusb"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
+              <p className='pp2'>2023 . 1h 34m . English </p>
+              <p className='ph2'>Wish, Animated movies have brought joy and wonder to audiences around the world of cartoons</p>
 
-              <h3>Movie Title</h3>
-              <p>Description</p>
             </div>
           </div>
         ))}
