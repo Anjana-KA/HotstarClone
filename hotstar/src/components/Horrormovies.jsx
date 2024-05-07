@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../css/Movies_1.css'; // Import the CSS file
 
-const HorrorMovies = () => {
+const Horrormovies = () => {
   const [imageUrls, setImageUrls] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -65,7 +65,7 @@ const HorrorMovies = () => {
   );
 }
 
-export default HorrorMovies;
+export default Horrormovies;
 
 
 

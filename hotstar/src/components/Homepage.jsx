@@ -3,12 +3,11 @@ import videoBg from '../video/videoBg.mp4';
 import wish from '../images/wish.webp';
 import img1 from '../images/img1.webp';
 import Movies from './Movies';
-import HorrorMovies from './HorrorMovies';
-import MysteryMovies from './MysteryMovies';
-import SmallSlider from './SmallSlider';
+import HorrorMovies from './Horrormovies';
+import MysteryMovies from './Mysterymovies';
+import SmallSlider from './Smallslider';
 
 const Homepage = () => {
-
   return (
     <div className="video-container">
       <video src={videoBg} autoPlay loop muted className="video-bg"></video>

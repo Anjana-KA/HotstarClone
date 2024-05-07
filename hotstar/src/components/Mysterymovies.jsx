@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import '../css/Movies_2.css'; // Import the CSS file
+import { Link } from 'react-router-dom';
+import '../css/Movies_2.css';
 
-const MysteryMovies = () => {
+const Mysterymovies = () => {
   const [imageUrls, setImageUrls] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,6 +31,7 @@ const MysteryMovies = () => {
     );
   };
 
+
   return (
     <div className="image-card-scroll-container2">
       <h1>
@@ -49,8 +51,13 @@ const MysteryMovies = () => {
             {/* Content to display on hover */}
             <div className="movie-content2">
               {/* Add your content here */}
-           
-              <button className="watch-now-button2"><span className="play-icon">&#9654;  </span>Watch Now</button>
+
+              <Link to="/watch-now">
+                <button className="watch-now-button2">
+                  <span className="play-icon">&#9654;</span> Watch Now
+                </button>
+              </Link>
+
               <button className="plusb"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
               <p className='pp2'>2023 . 1h 34m . English </p>
               <p className='ph2'>Wish, Animated movies have brought joy and wonder to audiences around the world of cartoons</p>
@@ -66,7 +73,7 @@ const MysteryMovies = () => {
   );
 }
 
-export default MysteryMovies;
+export default Mysterymovies;
 
 
 
