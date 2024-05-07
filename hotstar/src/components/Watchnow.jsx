@@ -1,12 +1,13 @@
 import React from 'react'
-import videoBg from '../video/videoBg-.mp4'
-import wish from '../images/wish.webp'
+import video from '../video/Mermaid.mp4'
+import wish from '../images/wish1.webp'
 import img1 from '../images/img1.webp'
 
 const Watchnow = () => {
     return (
         <div className='Video' >
-            <video src={videoBg} autoPlay loop muted></video>
+            <video src={video
+            } autoPlay loop muted></video>
             <div className='content'>
                 <img src={wish} className="wish" />
                 <img src={img1} className="img1" /><br></br>
