@@ -5,7 +5,7 @@ import img1 from '../images/img1.webp';
 import Movies from './Movies';
 import HorrorMovies from './HorrorMovies';
 import MysteryMovies from './MysteryMovies';
-import SmallSlider from './MoviesSlide';
+import SmallSlider from './SmallSlider';
 
 const Homepage = () => {
 
@@ -25,7 +25,7 @@ const Homepage = () => {
           <HorrorMovies/> 
           <Movies />
           <MysteryMovies/>
-          {/* <SmallSlider />    */}
+          <SmallSlider />   
         </div> 
         </div>
       </div>

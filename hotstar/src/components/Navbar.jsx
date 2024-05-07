@@ -16,10 +16,8 @@ const Navbar = () => {
         
        <div className=' grid grid-cols-2 bg-transparent  h-screen w-28 absolute z-10 navbar'>
             <div onMouseEnter={()=> setTouch(true)} onMouseLeave={()=> setTouch(false)}>
-
                 <img src={logo} className="w-16 ml-8 mt-6" />
-                <a href="#" class="subscribe-button">Subscribe&nbsp;<span>&gt;&nbsp;</span> </a> <br></br>
-               <br></br>
+                <a href="#" class="subscribe-button">Subscribe&nbsp;<span>&gt;&nbsp;</span> </a> <br></br><br></br>
                 <img src={myspace} className="w-7 ml-9 mt-8 cursor-pointer  hover:scale-125 transition-transform duration-300 " />
                 <img src={search} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
                 <img src={home} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" /> 
