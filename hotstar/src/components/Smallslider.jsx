@@ -15,33 +15,33 @@ const Smallslider = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 2,
-    initialSlide: 1,
+    initialSlide: 0,
   };
   return (
-    <div className="slider-container flex flex-col relative pr-9  z-10 rounded-md  gap-2 w-96 bottom-40 left-96" >
+    <div className="slider-container flex flex-col relative pr-9  z-10 rounded-md gap-10  w-96 bottom-32 left-96" >
       <Slider {...settings}>
         <div >
-          <img src={image1} className="h-20 w-28 hover:scale-110 transition opacity-80 hover:opacity-100  duration-300 " />
+          <img src={image1} className="h-12  hover:scale-110 transition opacity-80 hover:opacity-100  duration-300 " />
         </div>
         <div >
-          <img src={image2} className="h-20 w-28 hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
+          <img src={image2} className="h-12  hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
         </div>
         <div>
-          <img src={image3} className="h-20 w-28 hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
+          <img src={image3} className="h-12  hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
         </div>
         <div>
-          <img src={image4} className="h-20 w-28 hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
+          <img src={image4} className="h-12  hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
         </div>
         <div>
-          <img src={image5} className="h-20 w-28 hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
+          <img src={image5} className="h-12  hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
         </div>
         <div>
-          <img src={image6} className="h-20 w-28 hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
+          <img src={image6} className="h-12 hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
         </div>
         <div>
-          <img src={image7} className="h-20 w-28 hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
+          <img src={image7} className="h-12  hover:scale-110 transition opacity-60 hover:opacity-100 duration-300 " />
         </div>
 
       </Slider>

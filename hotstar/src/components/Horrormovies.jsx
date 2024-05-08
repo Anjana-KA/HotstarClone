@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Movies_1.css'; // Import the CSS file
 
 const Horrormovies = () => {
@@ -49,8 +50,9 @@ const Horrormovies = () => {
             {/* Content to display on hover */}
             <div className="movie-content1">
               {/* Add your content here */}
-           
-              <button className="watch-now-button1"><span className="play-icon">&#9654;  </span>Watch Now</button>
+              <Link to="/watch-now1">
+                <button className="watch-now-button1"><span className="play-icon">&#9654;  </span>Watch Now</button>
+              </Link>
               <button className="plusb1"> <span className="plus1">&nbsp; +</span>  &nbsp; </button>
               <p className='pp1'>2023 . 1h 34m . English </p>
               <p className='ph1'>Wish, Animated movies have brought joy and wonder to audiences around the world of cartoons</p>

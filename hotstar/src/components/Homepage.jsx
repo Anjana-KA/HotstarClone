@@ -20,15 +20,15 @@ const Homepage = () => {
           <p className='p3'>Musical | Comedy | Action | Adventure</p>
           <button className="subscribe-btn"> <span className="play-icon">&#9654;</span>  &nbsp;Subscribe to Watch </button>
           <button className="plus-btn"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
-          <button className="plus-btn1">U</button> 
-          <HorrorMovies/> 
+          <button className="plus-btn1">U</button>
+          <HorrorMovies />
           <Movies />
-          <MysteryMovies/>
-          <SmallSlider />   
-        </div> 
+          <MysteryMovies />
+          <SmallSlider />
         </div>
       </div>
-     
+    </div>
+
   );
 }
 
