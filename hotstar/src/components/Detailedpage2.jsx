@@ -15,12 +15,9 @@ const Detailedpage2 = () => {
             } catch (error) {
               console.error('Error fetching data:', error);
             }
-          };
-      
+          }; 
           fetchImage();
         }, [id]);
-
-
   return (
     <div>
      {imageUrls &&
@@ -31,7 +28,6 @@ const Detailedpage2 = () => {
 
   );
 }
-
 export default Detailedpage2;
 
 
