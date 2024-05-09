@@ -7,6 +7,7 @@ import tv from "../images/tv.svg"
 import movies from "../images/movies.svg"
 import sports from "../images/sports.svg"
 import category from "../images/category.svg"
+import Favorite from "../images/favorite.svg"
 
 const Navbar = () => {
     const [touch, setTouch] = useState(false)
@@ -21,7 +22,9 @@ const Navbar = () => {
                 <img src={tv} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
                 <img src={movies} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
                 <img src={sports} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
-                <img src={category} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" /> <br></br>
+                <img src={category} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" /> 
+                <img src={Favorite} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" /> <br></br>
+<br></br>
             </div>
             {touch &&
                 <div className=" z-20 ml-8 w-20  h-screen font-bold text-base text-slate-300 ">
@@ -32,23 +35,13 @@ const Navbar = () => {
                     <h4 className="mt-9">Movies</h4>
                     <h4 className="mt-9">Sports</h4>
                     <h6 className="mt-9">Categories</h6>
+                    <h6 className="mt-9">Favorites</h6>
                 </div>
             }
         </div>
     )
 }
 export default Navbar
-
-
-
-
-
-
-
-
-
-
-
 
 
 

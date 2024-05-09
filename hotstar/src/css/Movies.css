@@ -50,7 +50,7 @@ width: 200px;
 height: 70px;
 left: 99px;
 bottom:18px;
-}
+} 
 
 /* Hovering Contents */
 
@@ -62,7 +62,6 @@ bottom:18px;
   .movie-content {
     display: none;
     position: absolute;
-    /* font-size: smaller; */
     bottom: 3px;
     width: 100%;
     background-color: rgb(5, 5, 5);
@@ -122,3 +121,5 @@ margin-top: 12px;
  color: #c0bcbc;
 
 }
+
+ 

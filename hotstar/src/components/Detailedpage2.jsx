@@ -22,10 +22,8 @@ const Detailedpage2 = () => {
     <div>
      {imageUrls &&
      <img src={imageUrls.posterURL} className='img-con'/>
-     } 
-      
+     }        
     </div>
-
   );
 }
 export default Detailedpage2;
