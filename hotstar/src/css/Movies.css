@@ -28,6 +28,7 @@
 .image-card:hover {
   transform: scale(1.60); 
   transition: transform 0.4s ease;
+  z-index: 5;
 
   .image{
     height: 64%;
