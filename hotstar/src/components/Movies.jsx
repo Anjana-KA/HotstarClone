@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../css/Movies.css'; // Import the CSS file
+import '../css/Movies.css';
 
 const Movies = () => {
   const [imageUrls, setImageUrls] = useState([]);
@@ -47,12 +47,12 @@ const Movies = () => {
               alt={`Image ${currentIndex + index + 4}`}
               className="image"
             />
-            {/* Content to display on hover */}
             <div className="movie-content">
-              {/* Add your content here */}
+
               <Link to={`/watch-now2/${index+1}`}>
               <button className="watch-now-button"><span className="play-icon">&#9654;  </span>Watch Now</button>
               </Link>
+
               <button className="plusb"> <span className="plus">&nbsp; +</span>  &nbsp; </button>
               <p className='p'>2023 . 1h 34m . English  </p>
               <p className='ph'>Wish, Animated movies have brought joy and wonder to audiences around the world of cartoons</p>
