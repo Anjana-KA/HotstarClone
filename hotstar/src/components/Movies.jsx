@@ -11,8 +11,8 @@ const Movies = () => {
       try {
         const resp = await fetch('https://api.sampleapis.com/movies/family');
         const data = await resp.json();
-        const urls = data.map((movie) => movie.posterURL);
-        setImageUrls(urls);
+        // const urls = data.map((movie) => movie.posterURL);
+        setImageUrls(data);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -41,15 +41,15 @@ const Movies = () => {
           &lt;
         </button>
         {imageUrls.slice(currentIndex, currentIndex + 7).map((imageUrl, index) => (
-          <div className="image-card" key={index}>
+          <div className="image-card" key={imageUrl.title}>
             <img
-              src={imageUrl}
+              src={imageUrl.posterURL}
               alt={`Image ${currentIndex + index + 4}`}
               className="image"
             />
             <div className="movie-content">
 
-              <Link to={`/watch-now2/${index+1}`}>
+              <Link to={`/watch-now2/${imageUrl.id}`}>
               <button className="watch-now-button"><span className="play-icon">&#9654;  </span>Watch Now</button>
               </Link>
 
