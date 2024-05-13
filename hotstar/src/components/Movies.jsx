@@ -8,7 +8,7 @@ const Movies = () => {
     const { starredMovies, setStarredMovies } = useStarredMovies(); // Using the useStarredMovies hook
     const [imageUrls, setImageUrls] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [buttonClicked, setButtonClicked] = useState([]);
+    const [buttonClicked, setButtonClicked] = useState();
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -25,7 +25,7 @@ const Movies = () => {
     }, []);
 
     const slideLeft = () => {
-        setCurrentIndex((prevIndex) => Math.max(prevIndex - 3, 0));
+        setCurrentIndex((prevIndex) => Math.max(prevIndex - 3, 1));
     };
 
     const slideRight = () => {
@@ -34,18 +34,18 @@ const Movies = () => {
         );
     };
 
-    const handleButtonClick = (index) => {
+    const handleButtonClick = (id,imageUrl) => {
+        console.log("movie id",id)
+       
         const newButtonClicked = [...buttonClicked];
-        newButtonClicked[index] = !newButtonClicked[index];
+        newButtonClicked[id] = !newButtonClicked[id];
         setButtonClicked(newButtonClicked);
 
-        const movie = imageUrls[index]; // Get the movie object
-
-        if (newButtonClicked[index]) {
-            setStarredMovies([...starredMovies, movie]);
+        if (newButtonClicked[id]) {
+            setStarredMovies([...starredMovies, imageUrl]);
+            console.log("starred movies" , starredMovies)
         } else {
-            // Remove the unstarred movie by filtering based on id
-            setStarredMovies(starredMovies.filter((m) => m.id !== movie.id));
+            setStarredMovies(starredMovies.filter((m) => m.id !== imageUrl.id));
         }
     };
 
@@ -58,15 +58,15 @@ const Movies = () => {
                 <button className="button-left" onClick={slideLeft} disabled={currentIndex === 0}>
                     &lt;
                 </button>
-                {imageUrls.slice(currentIndex, currentIndex + 7).map((imageUrl, index) => (
-                    <div className="image-card" key={imageUrl.title}>
+                {imageUrls.slice(currentIndex, currentIndex + 7).map((imageUrl) => (
+                    <div className="image-card" key={imageUrl.id}>
                         <img
                             src={imageUrl.posterURL}
-                            alt={`Image ${currentIndex + index + 4}`}
+                            alt={`Image ${ imageUrl.id }`}
                             className="image"
                         />
-                        <button className={buttonClicked[index] ? 'top-right-button clicked' : 'top-right-button'} onClick={() => handleButtonClick(index)}>
-                            <FaStar className="star-icon" style={{ color: buttonClicked[index] ? 'yellow' : 'white' }} />
+                        <button onClick={() => handleButtonClick(imageUrl.id,imageUrl)}>
+                            <FaStar className="star-icon" style={{ color: buttonClicked[imageUrl.id] ? 'yellow' : 'white' }} />
                         </button>
 
                         <div className="movie-content">
@@ -83,10 +83,6 @@ const Movies = () => {
                     &gt;
                 </button>
             </div>
-
-            {/* Button to show Modal Window for Starred Movies */}
-
-
         </div>
     );
 }
