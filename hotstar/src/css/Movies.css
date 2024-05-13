@@ -142,7 +142,7 @@ margin-top: 12px;
 
 
 /*  MODAL WINDOW */
-
+ 
 .modal {
   position: fixed;
   top: 10%; 
@@ -154,7 +154,7 @@ margin-top: 12px;
   max-width: 250%;
   background-color: #f9f6f6;
   overflow-x: auto;
-}
+}  
 
 .modal-content {
   padding: 20px;
@@ -162,7 +162,7 @@ margin-top: 12px;
   width: 900px;
   flex-direction: row;
   overflow-x: auto;
-}
+} 
 .favorite{
   color: rgb(18, 1, 1);
   font-weight: bold;
