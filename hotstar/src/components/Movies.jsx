@@ -34,9 +34,7 @@ const Movies = () => {
         );
     };
 
-    const handleButtonClick = (id,imageUrl) => {
-        console.log("movie id",id)
-       
+    const handleButtonClick = (id,imageUrl) => {       
         const newButtonClicked = [...buttonClicked];
         newButtonClicked[id] = !newButtonClicked[id];
         setButtonClicked(newButtonClicked);
