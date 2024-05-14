@@ -20,7 +20,6 @@ const Movies = () => {
                 console.error('Error fetching data:', error);
             }
         };
-
         fetchData();
     }, []);
 
@@ -33,7 +32,6 @@ const Movies = () => {
             Math.min(prevIndex + 3, imageUrls.length - 3)
         );
     };
-
     const handleButtonClick = (id,imageUrl) => {       
         const newButtonClicked = [...buttonClicked];
         newButtonClicked[id] = !newButtonClicked[id];
@@ -46,7 +44,6 @@ const Movies = () => {
             setStarredMovies(starredMovies.filter((m) => m.id !== imageUrl.id));
         }
     };
-
     return (
         <div className="image-card-scroll-container">
             <h1>
