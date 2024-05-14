@@ -32,13 +32,13 @@ const Navbar = () => {
                 <img src={movies} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
                 <img src={sports} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
                 <img src={category} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
-                <div style={{ position: 'relative' }} onClick={handleOpenModal} >
+                <div style={{ }} onClick={handleOpenModal} >
                     <img src={Favorite} className="w-7 ml-9 mt-8 cursor-pointer hover:scale-125 transition-transform duration-300" />
+                    <span className="ml-11 text-slate-100"> {starredMovies.length}</span>
                     {starredMovies.length > 0 && (
                         <div className="notification-badge">{starredMovies.length}</div>
                     )}
-
-                </div>
+                </div>              
                 {showModal && (
                     <div className="modal">
                         <div className="modal-content">
@@ -57,7 +57,6 @@ const Navbar = () => {
                         </div>
                     </div>
                 )}
-
             </div>
             {touch &&
                 <div className="z-20 ml-8 w-20 h-screen font-bold text-base text-slate-300 ">
@@ -68,11 +67,10 @@ const Navbar = () => {
                     <h4 className="mt-9">Movies</h4>
                     <h4 className="mt-9">Sports</h4>
                     <h6 className="mt-9">Categories</h6>
-                    <h6 className="mt-9">Favorites ({starredMovies.length})</h6>
+                    <h6 className="mt-9">Favorites</h6>
                 </div>
             }
         </div>
     );
 }
-
 export default Navbar;
