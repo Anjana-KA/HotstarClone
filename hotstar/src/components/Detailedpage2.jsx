@@ -9,8 +9,7 @@ const Detailedpage2 = () => {
           const fetchImage = async () => {
             try {
               const resp = await fetch(`https://api.sampleapis.com/movies/family/${id}`);
-              const data = await resp.json();
-           
+              const data = await resp.json();          
               setImageUrls(data);
             } catch (error) {
               console.error('Error fetching data:', error);
