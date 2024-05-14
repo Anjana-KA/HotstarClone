@@ -22,5 +22,4 @@ const Detailedpage = () => {
         </div>
     );
 }
-
 export default Detailedpage;

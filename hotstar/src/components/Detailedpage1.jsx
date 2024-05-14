@@ -21,5 +21,4 @@ const Detailedpage1 = () => {
         </div>
     );
 }
-
 export default Detailedpage1;
