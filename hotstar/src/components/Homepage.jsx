@@ -2,6 +2,8 @@ import React from 'react';
 import videoBg from '../video/videoBg.mp4';
 import wish from '../images/wish.webp';
 import img1 from '../images/img1.webp';
+import footer1 from '../images/footer1.webp'
+import footer2 from '../images/footer2.webp'
 import Movies from './Movies';
 import HorrorMovies from './Horrormovies';
 import MysteryMovies from './Mysterymovies';
@@ -28,6 +30,7 @@ const Homepage = () => {
         </div>
       </div>
     </div>
+
   );
 }
 export default Homepage;

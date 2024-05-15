@@ -32,14 +32,14 @@ const Movies = () => {
             Math.min(prevIndex + 3, imageUrls.length - 3)
         );
     };
-    const handleButtonClick = (id,imageUrl) => {       
+    const handleButtonClick = (id, imageUrl) => {
         const newButtonClicked = [...buttonClicked];
         newButtonClicked[id] = !newButtonClicked[id];
         setButtonClicked(newButtonClicked);
 
         if (newButtonClicked[id]) {
             setStarredMovies([...starredMovies, imageUrl]);
-            console.log("starred movies" , starredMovies)
+            console.log("starred movies", starredMovies)
         } else {
             setStarredMovies(starredMovies.filter((m) => m.id !== imageUrl.id));
         }
@@ -57,10 +57,10 @@ const Movies = () => {
                     <div className="image-card" key={imageUrl.id}>
                         <img
                             src={imageUrl.posterURL}
-                            alt={`Image ${ imageUrl.id }`}
+                            alt={`Image ${imageUrl.id}`}
                             className="image"
                         />
-                        <button onClick={() => handleButtonClick(imageUrl.id,imageUrl)}>
+                        <button onClick={() => handleButtonClick(imageUrl.id, imageUrl)}>
                             <FaStar className="star-icon" style={{ color: buttonClicked[imageUrl.id] ? 'yellow' : 'white' }} />
                         </button>
 
