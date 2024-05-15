@@ -1,57 +1,51 @@
-
 /* Horror Movies */
 .image-card-scroll-container1 {
-    position: absolute;
-    bottom: 500px;
-    top: 670px;
-    left: 0;
-    width: 100%;
-    overflow-x: 400px;
-  
-  }  
-  
-  .image-card-container1 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2px;
-    margin-left: 80px;
-    top: 360px;
-  }
-  
-  .image-card1{
-    margin-right: 6px;
-    width: 155px;
-    border: 1px solid #5c5454;
-    border-radius: 5px;
-    overflow: hidden;
-    right: 400px;
-  }  
-  .image-card1:hover {
-    transform: scale(1.60); 
-    transition: transform 0.4s ease;
-    }
-    
-  
-  .heading1 {
-    font-size: larger;  
-    position: relative;
-    font-weight: bold;
-    font-family: sans-serif;
-    right: 100%;
-    width: 200px;
-    height: 70px;
-    left: 80px;
-    top: 320px;
-    }
+  position: absolute;
+  bottom: 500px;
+  top: 670px;
+  left: 0;
+  width: 100%;
+  overflow-x: 400px;
+}
 
+.image-card-container1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+  margin-left: 80px;
+  top: 360px;
+}
 
+.image-card1 {
+  margin-right: 6px;
+  width: 155px;
+  border: 1px solid #5c5454;
+  border-radius: 5px;
+  overflow: hidden;
+  right: 400px;
+}
+.image-card1:hover {
+  transform: scale(1.6);
+  transition: transform 0.4s ease;
+}
+
+.heading1 {
+  font-size: larger;
+  position: relative;
+  font-weight: bold;
+  font-family: sans-serif;
+  right: 100%;
+  width: 200px;
+  height: 70px;
+  left: 80px;
+  top: 320px;
+}
 
 /* Hovering Contents */
 
 .image-card1:hover .movie-content1 {
-  display: block; 
-
+  display: block;
 }
 
 .movie-content1 {
@@ -64,56 +58,46 @@
   color: white;
   padding: -8px;
   border-radius: 3px 0 5px 5px;
-
 }
 
-
 .watch-now-button1 {
- 
   padding: 4px 10px;
   font-size: 13px;
   font-weight: bold;
-  color:rgb(10, 10, 10);
+  color: rgb(10, 10, 10);
   background-color: rgb(218, 211, 220);
   border: none;
   border-radius: 6px;
-  cursor: pointer; 
+  cursor: pointer;
   font-family: sans-serif;
   margin-top: 10px;
   margin-left: 7px;
-
 }
 
-.plusb1{
-
-position: relative;
-font-size: 19px;
-color:rgb(252, 255, 246);
-background-color: rgba(250, 247, 251, 0.2);
-border-radius: 9px;
-cursor: pointer;
-transition: background-color 0.3s;
-font-family: sans-serif;
-padding: 0px 0px;
-margin-left: 5px;
-top:2px;
-
+.plusb1 {
+  position: relative;
+  font-size: 19px;
+  color: rgb(252, 255, 246);
+  background-color: rgba(250, 247, 251, 0.2);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: sans-serif;
+  padding: 0px 0px;
+  margin-left: 5px;
+  top: 2px;
 }
 
-
-.pp1{
-
-font-size: 10px;
-margin-left: 25px;
-margin-top: 12px;
-
+.pp1 {
+  font-size: 10px;
+  margin-left: 25px;
+  margin-top: 12px;
 }
-.ph1{
-font-size: 10px;
-margin-left: 8px;
-margin-right: 8px;
-margin-top: 8px;
-text-align: justify;
-color: #c0bcbc;
-
+.ph1 {
+  font-size: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  text-align: justify;
+  color: #c0bcbc;
 }
