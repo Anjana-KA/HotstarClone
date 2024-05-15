@@ -133,11 +133,12 @@
   left: 83%;
   transform: translateX(-90%);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(12, 12, 12, 0.5);
+  box-shadow: 0 0 10px rgba(250, 247, 247, 0.5);
   max-height: 60%;
   max-width: 250%;
-  background-color: #f9f6f6;
+  background-color: rgba(10, 10, 10, 0.3); /* Adjust the alpha value here */
   overflow-x: auto;
+  color: white;
 }
 
 .modal-content {
@@ -148,14 +149,14 @@
   overflow-x: auto;
 }
 .favorite {
-  color: rgb(18, 1, 1);
+  color: rgb(250, 245, 245);
   font-weight: bold;
 }
 
 .close {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 23px;
   font-size: 20px;
   cursor: pointer;
   color: red;
